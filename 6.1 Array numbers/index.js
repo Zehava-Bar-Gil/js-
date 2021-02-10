@@ -5,10 +5,12 @@ Print with for loop all the number:
 ------------------------------------*/
 
 const arrNum = [1,7,3,0,-5,7,3,9];
-// for(let i=0 ; i<arr.length ; i++){
-//     console.log(arrNum[i]);
-// }
-console.log (arrNum);
+
+for (let i= 0; i<8; i++) {
+
+console.log (arrNum[i]);
+
+}
 
 /*------------------------------------------------------------------------------- 
 Create function “arrayLength” that return the array length (don’t use arr.length):
