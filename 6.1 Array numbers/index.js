@@ -6,7 +6,7 @@ Print with for loop all the number:
 
 const arrNum = [1,7,3,0,-5,7,3,9];
 
-for (let i= 0; i<8; i++) {
+for (let i= 0; i<arrNum.length; i++) {
 
 console.log (arrNum[i]);
 
