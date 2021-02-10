@@ -23,7 +23,7 @@ example : [6,6] (the -1 is not includes on average).
         console.log(avg(arr))  //5,5,8 =>6 //5+5+8+7+5
         arr =[];
        }  
-       
+      
     }
  }
 
