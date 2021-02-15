@@ -25,23 +25,23 @@ const foodsWithUpperCase  = ["falafel", "sabich", "hummus", "pizza with extra" ,
 Sort the array of strings from ascending to descending order.
 ------------------------------------------------------------*/
 
-let newarray = [];
-for(i=0;i<foodsWithUpperCase.length; i++){
-    newarray.push(foodsWithUpperCase[i].toLowerCase())
+let newarray1 = [];
+for(let i=0;i<foodsWithUpperCase.length; i++){
+    newarray1.push(foodsWithUpperCase[i].toLowerCase())
 }
-newarray.sort()
-console.log(newarray);
+newarray1.sort()
+console.log(newarray1);
 
 /*-----------------------------------------------------------
 Sort the array of strings from descending to ascending order.
 ------------------------------------------------------------*/
 
-let newarray = [];
-for(i=0;i<foodsWithUpperCase.length; i++){
-    newarray.push(foodsWithUpperCase[i].toLowerCase())
+let newarray2 = [];
+for(let i=0;i<foodsWithUpperCase.length; i++){
+    newarray2.push(foodsWithUpperCase[i].toLowerCase())
 }
-newarray.sort().reverse();
-console.log(newarray);
+newarray2.sort().reverse();
+console.log(newarray2);
 
 /*---------------------------------------------------------*/
 const words = ["apple", "supercalifragilisticexpialidocious",
