@@ -25,4 +25,4 @@ const compareFoods = (food, food1)=>{
     }
 }
 
-console.log(compareFoods);
+console.log(compareFoods(food, food1));
