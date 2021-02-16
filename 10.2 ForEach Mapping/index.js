@@ -102,21 +102,31 @@ an argument and return’s an encoded string with each
 letter shifted down the alphabet by one
 ----------------------------------------------------------*/
 
+// function shiftLetters(str, num) {
+    
+//     str = str.toLowerCase();
 
-  function shiftLetters(str){
-    let wordList = str.split(" ");
+//     let result = '';
+//     let charcode = 0;
 
-    //console.log(wordList);
+//     for (let i = 0; i < str.length; i++) {
+//         charcode = (str[i].charCodeAt()) - num;
+//         result += String.fromCharCode(charcode);
+//     }
+//     return result;
 
-    wordList.forEach(function(word, index){
-        wordList[index] = word[0].toUpperCase() + word.substring(1);
-    })
+// }
+// console.log(shiftLetters('bargil', 1));
 
-    return wordList.join(' ');
-  };
-
-  let str = "zehava, how are you?";
-  console.log(shiftLetters(str));
+/*--Other Option--*/
+const shiftLetters = str => {
+    return str.split("").map(ch => {
+        return ch == 'a' ? 'z' :
+        ch == 'A' ? 'Z' :
+        String.fromCharCode(ch.charCodeAt(0) -1);
+    }).join("");
+}
+console.log(shiftLetters("Zehava"));
 
 /*----------------------------------------------------------
 Create a function called swapCase that takes a string as
@@ -124,9 +134,9 @@ an argument and returns a string that every other word is
 capitalized. 
 ----------------------------------------------------------*/
 
-function swapCase(string) {
-    return string.toUpperCase();
+const swapCase = (str) => {
+    return str.split(' ').map((word, index) => (index % 2) === 0 ? word : capitalizeLetter(word)).join(' ');
   }
   
-  console.log(swapCase('corn, pizza')); 
+  console.log(swapCase('aaa bbb ccc ddd eee')); 
 
