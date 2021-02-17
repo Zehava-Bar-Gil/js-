@@ -7,3 +7,5 @@ function countOccurrences (str, char){
     }} return counter ;
     }
     countOccurrences ( "ini mini miny moe" , "n" );
+
+  
