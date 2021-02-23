@@ -23,7 +23,7 @@ aside.style.width = "auto";
 aside.style.height = "100%";
 
 const main = document.createElement("main");
-main.style.flex = "7";
+main.style.flex = "10";
 main.style.height = "100%";
 main.style.display = "flex";
 
@@ -37,7 +37,7 @@ title1.textContent = "Art by Gold";
 const p1 = document.createElement("p");
 p1.textContent = "When art and creation come together, you can sail to other realms and create new and wonderful worlds"
 p1.style.paddingTop = "30px";
-p1.style.fontSize = "18px";
+p1.style.fontSize = "20px";
 mainTextArea.appendChild(title1);
 mainTextArea.appendChild(p1);
 
