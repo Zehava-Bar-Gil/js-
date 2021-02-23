@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;   
+      }
+
+
+body {
+    display: grid;
+    justify-content: center;
+    color: #1f1f20; 
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center; 
+    width: 100vw; 
+       
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin-top: 200px;
+    border: none;
+    width: 90%;
+
+}
+
+div {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    border: 2px solid #1f1f20;
+    border-radius: 30px;   
+}
