@@ -3,10 +3,15 @@ document.body.height = "100vh";
 
 
 const header = document.createElement("header");
-header.style.height = "12vh";
+const title1 = document.createElement("h1");
+title1.textContent = "Art by Gold";
+title1.fontFamily = "Ariel";
+header.style.height = "15vh";
 header.style.backgroundColor = "#f5eec8";
 header.style.display = "flex";
 header.style.justifyContent = "center";
+header.appendChild(title1);
+document.body.appendChild(header);
 
 
 document.body.appendChild(header);
@@ -32,13 +37,10 @@ mainImg.src = "/18.2 Create a web page/art.jpg";
 
 const mainTextArea = document.createElement("div");
 mainTextArea.style.padding = "50px";
-const title1 = document.createElement("h1");
-title1.textContent = "Art by Gold";
 const p1 = document.createElement("p");
 p1.textContent = "When art and creation come together, you can sail to other realms and create new and wonderful worlds"
 p1.style.paddingTop = "30px";
 p1.style.fontSize = "20px";
-mainTextArea.appendChild(title1);
 mainTextArea.appendChild(p1);
 
 
