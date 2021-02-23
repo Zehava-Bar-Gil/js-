@@ -18,3 +18,13 @@ const users = [
     email: "timmy.hotmail.com",
   },
 ];
+
+const start = document.querySelector ('body')
+
+const ol = document.createElement ('ol')
+document.body.appendChild(ol)
+ol.setAttribute('style', 'list-style-type: none;')
+
+users.forEach (user=>{
+    ol.innerHTML += `<li data-id = "${user.id}">${user.firstName} ${user.lastName} </li>`;
+})

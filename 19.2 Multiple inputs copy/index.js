@@ -11,7 +11,7 @@ input.nextElementSibling.focus();
 }
 setTimeout(function () {
 function handlePaste(e){
-const pate = e.clipboardData.getData('text');
+const paste = e.clipboardData.getData('text');
 //loop over each input, and populate with the index of that string
 inputs.forEach((input, i) => {
   console.log(input);  
