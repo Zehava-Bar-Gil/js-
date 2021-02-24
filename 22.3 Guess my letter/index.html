@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Guess my letter</title>
+</head>
+<body>
+
+    <div class = "info">***Try to guess the hidden word below before it's too late!***<br/>
+        You can guess either one letter at a time or the whole word, but if you get the word
+        wrong you lose 2 guesses!</div>
+
+        <h1>Welcome To Guess My Word!</h1>
+        <br/>
+        <input type="text" placeholder="Guess">
+
+        <button style="display: none;">Play Again</button>
+
+        <div class="word"></div>
+
+        <div class="hangman"></div>
+
+        <span style="position: absolute;bottom:10px;left:10px">
+        <div class="guessesLeft">Guesses left: </span class="bold">10</div>
+        <div class="guessed">Guesses letters: </span class="bold"></div>
+        </span>
+
+        <span style="position: absolute;bottom:10px;right:10px">
+            <div>Streak: <span class="streak bold">0</span></div>
+
+            <div>Average score: <span class="score bold">-</span></div>
+        </span>
+    <script src="./index.js"></script>
+</body>
+</html>
