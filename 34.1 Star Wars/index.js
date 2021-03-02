@@ -18,6 +18,12 @@ tr.appendChild(plant)
 const population = document.createElement("TH");
 population.innerHTML = 'population'
 tr.appendChild(population)
+
+table.innerHTML = `<tr>
+    <th colspan="5">Star Wars</th>
+    </tr>
+`;
+
 table.appendChild(tr)
 document.body.appendChild(table);
 
