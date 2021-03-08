@@ -10,6 +10,10 @@ class Car {
         return this.speed;
     }
 
+    setSpeed(speed){
+        this.speed = speed;
+    }
+
     print(){
         console.log(`brand : ${this.brand1} speed : ${this.speed1}`)
     }
@@ -24,6 +28,7 @@ c1.print();
 c2.print();
 c3.print();
 c4.print();
+
 
 let carsArr = [c1, c2, c3, c4];
 let speedCar = carsArr.reduce((max,car)=>{
